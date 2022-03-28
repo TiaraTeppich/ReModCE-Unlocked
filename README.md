@@ -3,13 +3,13 @@ ReMod Community Edition Unlocked - A All-in-One VRChat mod to suit all your need
 
 ## Unlocked version notes
 
-This mod is for you if you don't want to run shady malicious obfuscated mods (which often times contain auth token loggers and remote access toolkits) but want risky functions in all worlds. 
+This mod is for you if you don't want to run shady malicious obfuscated mods (which often times contain auth token loggers and remote access toolkits) but want an unlocked all-in-one mod (see the features below).
 
 Our computers belong to us and we should be able to do whatever we want with them. There are plenty of worlds where risky functions are disabled because of world tags and we shouldn't have to go beg for *permission* (in the case of emmVRC, not ReMod CE) to reenable them on a per-world basis for what should be basic functions available at all times. That said, please be nice and don't cheat or invade people's privacy.
 
-I encourage you to review the code to see the differences with upstream ReMod CE, compile this yourself, and disable automatic updates. Reviewing code that originated upstream is probably unnecessary as it's already reviewed for safety by the VRChat Modding Group.
+This fork also unlocks the ability to favorite unlimited avatars without an expensive subscription to VRChat+. While it's understandable why there was a rule made in the VRChat Modding Group that you can't interfere with VRChat's montization, many of my friends which live in poor countries simply aren't able to afford the price of the subscription.
 
-I might unlock the ability to favorite unlimited avatars without VRC+ in the future. I'm pretty inexperienced when it comes to programming and I just wanted to get something out quickly since emmVRC broke Astral Risk Acceptance on purpose.
+I encourage you to review the code to see the differences with upstream ReMod CE, compile this yourself, and disable automatic updates. Reviewing code that originated upstream is probably unnecessary as it's already reviewed for safety by the VRChat Modding Group.
 
 ## Installation & Usage
 **You need at least MelonLoader v0.5.3 since VRChat Build 1169!**
