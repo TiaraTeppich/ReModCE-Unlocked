@@ -12,7 +12,7 @@ This fork also unlocks the ability to favorite unlimited avatars without an expe
 I encourage you to review the code to see the differences with upstream ReMod CE, compile this yourself, and disable automatic updates. Reviewing code that originated upstream is probably unnecessary as it's already reviewed for safety by the VRChat Modding Group.
 
 ## Installation & Usage
-**You need at least MelonLoader v0.5.3 since VRChat Build 1169!**
+**You need at least MelonLoader v0.5.3!**
 
 Grab the latest loader from [the releases page]( https://github.com/VRChat-is-Awesome/ReModCE-Unlocked/releases/) and put it in your Mods directory.  
 
