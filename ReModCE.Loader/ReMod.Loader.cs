@@ -54,7 +54,7 @@ namespace ReModCE.Loader
                 true);
             
             DownloadFromGitHub("ReMod.Core", out _);
-            DownloadFromGitHub("ReModCEUnlocked", out var assembly);
+            DownloadFromGitHub("ReModCE", out var assembly);
 
             if (assembly == null)
                 return;
