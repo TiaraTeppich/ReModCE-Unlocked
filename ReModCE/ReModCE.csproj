@@ -229,6 +229,11 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\3rdparty\ml\Managed\VRCSDKBase.dll</HintPath>
     </Reference>
+    <Reference Include="Harmony">
+      <Private>false</Private>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\3rdparty\ml\0Harmony.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Components\AvatarFavoritesComponent.cs" />
