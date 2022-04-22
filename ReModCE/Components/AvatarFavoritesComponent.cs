@@ -117,7 +117,8 @@ namespace ReModCE.Components
             _searchedAvatarList = new ReAvatarList("ReModCE Search", this);
 
             _favoriteAvatarList = new ReAvatarList("ReModCE Favorites", this, false);
-            _favoriteAvatarList.AvatarPedestal.field_Internal_Action_3_String_GameObject_AvatarPerformanceStats_0 = new Action<string, GameObject, AvatarPerformanceStats>(OnAvatarInstantiated);
+            // - commented out as a quick fix, because this field is not neccessary and breaks the ui initialization on the current vrchat update as of 21.04.2022
+            //_favoriteAvatarList.AvatarPedestal.field_Internal_Action_3_String_GameObject_AvatarPerformanceStats_0 = new Action<string, GameObject, AvatarPerformanceStats>(OnAvatarInstantiated);
             _favoriteAvatarList.OnEnable += () =>
             {
                 // make sure it stays off if it should be off.
