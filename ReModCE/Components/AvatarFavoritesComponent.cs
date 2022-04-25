@@ -117,7 +117,8 @@ namespace ReModCE.Components
             _searchedAvatarList = new ReAvatarList("ReModCE Search", this);
 
             _favoriteAvatarList = new ReAvatarList("ReModCE Favorites", this, false);
-            _favoriteAvatarList.AvatarPedestal.field_Internal_Action_3_String_GameObject_AvatarPerformanceStats_0 = new Action<string, GameObject, AvatarPerformanceStats>(OnAvatarInstantiated);
+            // - commented out as a quick fix, because this field is not neccessary and breaks the ui initialization on the current vrchat update as of 21.04.2022
+            //_favoriteAvatarList.AvatarPedestal.field_Internal_Action_3_String_GameObject_AvatarPerformanceStats_0 = new Action<string, GameObject, AvatarPerformanceStats>(OnAvatarInstantiated);
             _favoriteAvatarList.OnEnable += () =>
             {
                 // make sure it stays off if it should be off.
@@ -467,6 +468,16 @@ namespace ReModCE.Components
 
         private void FetchAvatars()
         {
+            // offline edit # start
+            if (File.Exists("UserData/ReModCE/avatars.bin"))
+            {
+                _savedAvatars = BinaryGZipSerializer.Deserialize("UserData/ReModCE/avatars.bin") as List<ReAvatar>;
+            }
+            else
+            {
+                _savedAvatars = new List<ReAvatar>();
+            }
+            /*
             SendAvatarRequest(HttpMethod.Get, avatarResponse =>
             {
                 if (!avatarResponse.IsSuccessStatusCode)
@@ -485,6 +496,8 @@ namespace ReModCE.Components
                     _savedAvatars = JsonConvert.DeserializeObject<List<ReAvatar>>(t.Result);
                 });
             });
+            */
+            // offline edit # end
         }
 
         private static IEnumerator ShowAlertDelayed(string message, float seconds = 0.5f)
@@ -514,6 +527,8 @@ namespace ReModCE.Components
             
             var hasFavorited = HasAvatarFavorited(apiAvatar.id);
             
+            // offline edit # start
+            /*
             SendAvatarRequest(hasFavorited ? HttpMethod.Delete : HttpMethod.Put, favResponse =>
             {
                 if (!favResponse.IsSuccessStatusCode)
@@ -537,6 +552,7 @@ namespace ReModCE.Components
                 }
             }, new ReAvatar(apiAvatar));
 
+            */
             if (_favoriteAvatarList.AvatarPedestal.field_Internal_ApiAvatar_0.id == apiAvatar.id)
             {
                 if (!HasAvatarFavorited(apiAvatar.id))
@@ -550,6 +566,9 @@ namespace ReModCE.Components
                     _favoriteButton.Text = "Favorite";
                 }
             }
+            // offline edit # save to file
+            BinaryGZipSerializer.Serialize(_savedAvatars, "UserData/ReModCE/avatars.bin");
+            // offline edit # end
 
             _favoriteAvatarList.RefreshAvatars();
         }
