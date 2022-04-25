@@ -151,7 +151,7 @@ namespace ReModCE.Components
 
             _recentAvatars.Insert(0, new ReAvatar(avatar));
 
-            if (_recentAvatars.Count > 250)
+            if (_recentAvatars.Count > 25)
             {
                 _recentAvatars.Remove(_recentAvatars.Last());
             }
