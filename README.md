@@ -5,7 +5,6 @@ I will not be maintaining this repository for much longer. The latest version of
 ReMod Community Edition Unlocked - A All-in-One VRChat mod to suit all your needs using [MelonLoader](https://github.com/LavaGang/MelonLoader)
 
 ## Unlocked version notes
-
 This mod is for you if you don't want to run shady malicious obfuscated mods (which often times contain auth token loggers and remote access toolkits) but want an unlocked all-in-one mod (see the features below).
 
 Our computers belong to us and we should be able to do whatever we want with them. There are plenty of worlds where risky functions are disabled because of world tags and we shouldn't have to go beg for *permission* (in the case of emmVRC, not ReMod CE) to reenable them on a per-world basis for what should be basic functions available at all times. That said, please be nice and don't cheat or invade people's privacy.
@@ -15,7 +14,7 @@ This fork also unlocks the ability to favorite unlimited avatars without an expe
 I encourage you to review the code to see the differences with upstream ReMod CE, compile this yourself, and disable automatic updates. Reviewing code that originated upstream is probably unnecessary as it's already reviewed for safety by the VRChat Modding Group.
 
 ## Installation & Usage
-**You need at least MelonLoader v0.5.3!**
+**You need at least MelonLoader v0.5.4!**
 
 Grab the latest loader from [the releases page]( https://github.com/VRChat-is-Awesome/ReModCE-Unlocked/releases/) and put it in your Mods directory.  
 
