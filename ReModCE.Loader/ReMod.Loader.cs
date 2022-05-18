@@ -51,7 +51,7 @@ namespace ReModCE.Loader
 
         public ReLoader()
         {
-            _logger = new ReLogger(new MelonLogger.Instance("ReModCE"));
+            _logger = new ReLogger(new MelonLogger.Instance("ReModCEUnlocked"));
 
             var category = MelonPreferences.CreateCategory("ReModCE");
             _paranoidMode = category.CreateEntry("ParanoidMode", false, "Paranoid Mode",
