@@ -1,5 +1,5 @@
 # NOTICE
-I will not be maintaining this repository for much longer. The latest version of SaferRiskAcceptance unlocks the risky functions of the vanilla ReModCE for most worlds. Once it unlocks it for all worlds I'll archive this project. While SaferRiskAcceptance does not unlock the ability to favorite unlimited avatars without VRChat+ I never used favorites feature anyways. Feel free to fork this repository if you'd like to continue the work.
+I'm not maintaining this repository anymore because the latest version of SaferRiskAcceptance (see my other repositories) unlocks risky functions for all worlds for the regular version of ReModCE. While SaferRiskAcceptance does not unlock the ability to favorite unlimited avatars without VRChat+ I never used favorites feature anyways. Feel free to fork this repository if you'd like to continue the work.
 
 # ReMod CE Unlocked
 ReMod Community Edition Unlocked - A All-in-One VRChat mod to suit all your needs using [MelonLoader](https://github.com/LavaGang/MelonLoader)
